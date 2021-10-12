@@ -65,7 +65,7 @@ function returnMaze(m) {
   return text;
 }
 
-//The above 2 methods are adapted from http://rosettacode.org/wiki/Maze_generation to generate the maze with minor modifications for 0 and 1s
+//The above 2 methods are adapted from http://rosettacode.org/wiki/Maze_generation to generate the maze with minor modifications for 0 and
 
 function getCollectiblesCoordinates(maze) {
   const dimension = maze.length;
@@ -104,7 +104,7 @@ function getPlayerAndGoalInitialPositions(level) {
 function Game(level) {
   this.el = document.getElementById("game-container-1");
   this.score = 0;
-  this.interval = null;
+  this.interval = null
 
   //   this.mapArray = createMapArray(level);
   this.mapArray = returnMaze(maze(level, level));
@@ -232,11 +232,13 @@ Game.prototype.checkInitialAndFinalPoints = function () {
   ) {
     body.className = "success";
     let display = document.querySelector("#time");
-    display.textContent = 0;
+    display.textContent = 0
 
     let buttonElement = document.getElementById("restart-button");
     buttonElement.style.display = "inline";
-    alert("Completed");
+    alert('Completed')
+
+
   } else {
     body.className = "";
   }
@@ -349,11 +351,13 @@ function init(level) {
   mazeGame.keyboardListener();
 }
 
+
+
 function startTimer(duration, display) {
   var timer = duration,
     minutes,
     seconds;
-  var myInterval = setInterval(function () {
+    var myInterval = setInterval(function () {
     minutes = parseInt(timer / 60, 10);
     seconds = parseInt(timer % 60, 10);
 
@@ -372,12 +376,12 @@ function startTimer(duration, display) {
       startTimer(0, display);
     }
   }, 1000);
-  this.interval = myInterval;
+  this.interval = myInterval
 }
 
 window.onload = function () {
-  let level = prompt("Enter the level", 1);
-  init(level * 3);
+   let level =  prompt('Enter the level', 1)
+    init(level* 3);
   var fiveMinutes = 30,
     display = document.querySelector("#time");
   startTimer(fiveMinutes, display);
