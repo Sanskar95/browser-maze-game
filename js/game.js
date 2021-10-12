@@ -107,7 +107,7 @@ function Game(level) {
   this.interval = null;
 
   //   this.mapArray = createMapArray(level);
-  this.mapArray = Maze.returnMaze(Maze.maze(level, level));
+  this.mapArray = returnMaze(maze(level, level));
   this.positions = getPlayerAndGoalInitialPositions(level);
   console.log(this.positions);
 }
