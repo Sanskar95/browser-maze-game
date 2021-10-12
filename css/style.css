@@ -22,7 +22,7 @@ body {
     text-align: center;
   }
   .game-map {
-    position: relative;
+    position: absolute;
   }
   div.layer, 
   div.layer div {
@@ -81,9 +81,7 @@ body {
 
   #score {
     /* opacity: 0; */
-    transition: opacity 0.2s ease;
-    position: absolute;
-    margin: 20rem;
+   
     background-color: white;
     color: black;
     font-size: 2rem;
@@ -92,11 +90,7 @@ body {
 
   #score-text {
     /* opacity: 0; */
-    transition: opacity 0.2s ease;
-    position: absolute;
-    margin: 20rem;
-    padding: 1rem;
-    background-color: white;
+   
     color: black;
     font-size: 2rem;
   }
@@ -112,7 +106,7 @@ body {
     transition: opacity 0.2 ease;
   }
   #map-and-controls {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
   }
   /*

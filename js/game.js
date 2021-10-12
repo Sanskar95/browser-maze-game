@@ -253,7 +253,7 @@ Game.prototype.matchCollectible = function () {
       !collectibleArray[i].collected
     ) {
       this.score += 1;
-      document.getElementById("score").innerHTML = "Score" +this.score.toString();
+      document.getElementById("score").innerHTML = this.score.toString();
 
       collectibleArray[i].collected = true;
     }
