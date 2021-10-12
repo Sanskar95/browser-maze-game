@@ -32,15 +32,15 @@ body {
     border: 1px solid grey;
   }
    .floor {
-    background-color: lightgrey;
+    background-color: rgb(205, 236, 184);
   }
   .wall {
-    background-color: skyblue;
+    background-color: gray
   }
 
 
   .initial {
-    background-color: #90ee90;
+    background-color: #093f09;
     border: 1px solid green;
   }
   .final {
